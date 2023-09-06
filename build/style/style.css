@@ -814,8 +814,8 @@ video {
   background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.95)),url(../assets/snow-mountain-portrait.webp);
 }
 
-.bg-\[radial-gradient\(rgba\(0\2c 0\2c 0\2c \.5\)\2c rgba\(0\2c 0\2c 0\2c 1\)\)\2c url\(\.\.\/assets\/foot-scenery\.webp\)\] {
-  background-image: radial-gradient(rgba(0,0,0,.5),rgba(0,0,0,1)),url(../assets/foot-scenery.webp);
+.bg-\[radial-gradient\(rgba\(0\2c 0\2c 0\2c \.1\)\2c rgba\(0\2c 0\2c 0\2c 1\)\)\2c url\(\.\.\/assets\/foot-scenery\.webp\)\] {
+  background-image: radial-gradient(rgba(0,0,0,.1),rgba(0,0,0,1)),url(../assets/foot-scenery.webp);
 }
 
 .bg-cover {
