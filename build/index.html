@@ -1,0 +1,174 @@
+<!doctype html>
+<html class="md:scroll-smooth" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Muil Djamil" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link rel="stylesheet" href="style/style.css" />
+    <title>Great Outdoors</title>
+  </head>
+  <body class="bg-black text-white font-open-sans">
+    <header class="min-h-[100vh]">
+      <nav class="fixed top-0 z-50 w-screen navigation-bar transition-colors ease-in duration-500">
+        <div
+          class="container hidden md:flex items-center text-sm uppercase font-light py-4"
+        >
+          <a href="#" class="hover:text-yellow-700 text-center flex-1">Home</a>
+          <a href="#explore" class="hover:text-yellow-700 text-center flex-1">Explore</a>
+          <a href="#" class="text-[2.5rem] text-center flex-1">
+            <iconify-icon icon="game-icons:mountaintop"></iconify-icon>
+          </a>
+          <a href="#journal" class="hover:text-yellow-700 text-center flex-1">Journal</a>
+          <label for="search" class="text-center flex-1">
+            <iconify-icon icon="material-symbols:search"></iconify-icon>
+            <input autocomplete="off" type="text" id="search" class="w-[10ch] bg-transparent outline-none" placeholder="SEARCH">
+          </label>
+        </div> 
+
+        <div class="container mx-auto md:hidden items-center flex justify-between py-3">
+          <a href="#" class="text-4xl md:text-5xl flex">
+            <iconify-icon icon="game-icons:mountaintop"></iconify-icon>
+          </a>
+          <div id="burger-button" class="text-white flex items-center">
+            <div class="relative w-6 h-[2px] md:h-1 bg-white rounded before:absolute before:contents-[''] before:w-6 before:h-[2px] before:md:h-1 before:bg-white before:rounded before:-translate-y-[10px] ease-linear duration-200 before:ease-linear before:duration-200 after:ease-linear after:duration-300 after:absolute after:contents-[''] after:w-6 after:h-[2px] after:md:h-1 after:bg-white after:rounded after:translate-y-[10px]"></div>
+          </div>
+        </div>
+      </nav>
+
+      <nav id="mobile-navigation" class="hidden z-40 fixed w-screen h-screen top-0 left-0 bg-black origin-top animate-expand-menu navigation-bar transition-colors ease-in duration-500">
+        <div class="container text-center text-white h-full mt-[80px]">
+          <ul class="list-none">
+            <li class="block py-6">
+              <a class="text-lg" href="#">Home</a>
+            </li>
+            <li class="block py-6">
+              <a class="text-lg" href="#explore">Explore</a>
+            </li>
+            <li class="block py-6">
+              <a class="text-lg" href="#journal">Journal</a>
+            </li>
+            <li class="block py-6">
+              <label for="search">
+                <iconify-icon icon="material-symbols:search"></iconify-icon>
+                <input autocomplete="off" type="text" id="search" class="w-[7ch] bg-transparent outline-none" placeholder="SEARCH">
+              </label>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div
+        class="relative grid min-h-[100vh] place-content-center bg-[linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.8)),url(../assets/hero-scenery.webp)] bg-cover bg-center bg-no-repeat"
+      >
+        <div class="container md:px-2 flex flex-col sm:items-center">
+          <h1 class="font-playfair-display text-6xl mb-2 md:text-[4.9rem]">The Great Outdoors</h1>
+          <p class="text-xl">Wander often, Wonder always</p>
+          <iconify-icon icon="octicon:play-24" class="hidden md:inline-block text-5xl mt-8 text-white"></iconify-icon>
+        </div> 
+      </div>
+    </header>
+
+    <main>
+      <section id="explore" class="mt-16 scroll-mt-10">
+        <div class="container mx-auto md:w-3/4 lg:w-1/2 md:text-center mb-8 xl:mb-16">
+          <h2 class="text-4xl mb-6 font-bold">Explore the World</h2>
+          <p class="font-light">Exploration isn't just about physical journeys; it's about pushing the boundaries of what we think we're capable of. It's conquering your fears, mastering new skills, and finding resilience you never knew you had.</p>
+        </div>
+        <div class="container mx-auto">
+          <div class="grid md:grid-cols-3 gap-8 mb-8">
+            <div class="grid rounded-sm bg-[linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.95)),url(../assets/snow-mountain-portrait.webp)] bg-cover bg-center bg-no-repeat h-[420px] md:hover:scale-105 ease duration-200">
+              <div class="row-span-full col-span-full z-20 flex flex-col justify-end items-center py-10">
+                <h3 class="font-playfair-display text-2xl mb-1">Mount Alaska</h3>
+                <p class="uppercase tracking-wider">ALASKA</p>
+              </div>
+            </div>
+            <div class="grid rounded-sm bg-[linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.95)),url(../assets/canyon-mountain-portrait.webp)] bg-cover bg-center bg-no-repeat h-[420px] md:hover:scale-105 ease duration-200">
+              <div class="row-span-full col-span-full z-20 flex flex-col justify-end items-center py-10">
+                <h3 class="font-playfair-display text-2xl mb-1">Deep Canyon</h3>
+                <p class="uppercase tracking-wider">New Zealand</p>
+              </div>
+            </div>
+            <div class="grid rounded-sm bg-[linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.95)),url(../assets/green-mountain-portrait.webp)] bg-cover bg-center bg-no-repeat h-[420px] md:hover:scale-105 ease duration-200">
+              <div class="row-span-full col-span-full z-20 flex flex-col justify-end items-center py-10">
+                <h3 class="font-playfair-display text-2xl mb-1">Green Mountain</h3>
+                <p class="uppercase tracking-wider">INDONESIA</p>
+              </div>
+            </div>
+          </div>
+          <div class="text-center">
+            <a href="#a">
+              <p class="text-blue-700 uppercase">SEE MORE <span class="text-[9px] align-middle">></span></p>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="journal" class="mt-32 scroll-mt-10">
+        <div class="container mx-auto md:w-3/4 lg:w-1/2 mb-8 xl:mb-16 md:text-center">
+          <h2 class="text-4xl mb-6 font-bold">The Journal</h2>
+          <p class="font-light"> we believe that keeping a journal is not only a delightful way to relive your adventures but also a valuable tool for personal growth, learning, and preserving memories.</p>
+        </div>
+        <div class="container mx-auto">
+          <div class="grid md:grid-cols-2 gap-y-10 md:gap-x-4 lg:gap-x-8 mb-8">
+            <div>
+              <img src="assets/journal1.webp" alt="journal1" class="rounded-sm w-full sm:h-[280px]">
+              <div class="py-5 md:p-5 text-center">
+                <p>October 12, 2014</p>
+                <h3 class="font-playfair-display text-2xl mt-1 mb-3">An Unforgettable</h3>
+                <p class="font-light">Every sunrise is a new adventure, and every sunset a chance to make memories that will last a lifetime</p>
+              </div>
+            </div>
+            <div>
+              <img src="assets/journal2.webp" alt="journal2" class="rounded-sm w-full sm:h-[280px]">
+              <div class="py-5 md:p-5 text-center">
+                <p>May 21, 2012</p>
+                <h3 class="font-playfair-display text-2xl mt-1 mb-3">Beautifull Moment</h3>
+                <p class="font-light">From pristine mountaintops to tranquil lakeshores, the great outdoors offers a tapestry of beauty waiting to be unveiled.</p>
+              </div>
+            </div>
+          </div>
+          <div class="text-center">
+            <a href="#">
+              <p class="text-blue-700">ALL POSTS <span class="text-[9px] align-middle">></span></p>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="min-h-[450px] w-full bg-[radial-gradient(rgba(0,0,0,.5),rgba(0,0,0,1)),url(../assets/foot-scenery.webp)] bg-cover bg-center bg-no-repeat mt-3">
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container pt-1 pb-4">
+        <div class="text-center font-normal">
+          <p class="md:inline-block mb-2 md:mb-0">&#169; 2023 MUIL DJAMIL. <a href="https://muildjamil.my.id" target="_blank">https://muildjamil.my.id</a></p>
+          <span class="hidden md:inline-block mx-4"> | </span>
+          <ul class="md:list-disc md:inline-block space-x-2 md:space-x-6">
+            <li class="inline-block">
+              <a href="#" class="underline underline-offset-2 md:no-underline">Home</a>
+            </li>
+            <li class="inline-block">
+              <a class="underline underline-offset-2 md:no-underline" href="#explore">Explore</a>
+            </li>
+            <li class="inline-block">
+              <a class="underline underline-offset-2 md:no-underline" href="#journal">Journal</a>
+            </li>
+            <li class="inline-block">
+              <a class="underline underline-offset-2 md:no-underline" href="#search">Search</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
